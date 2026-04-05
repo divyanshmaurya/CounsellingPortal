@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Chatbot from "@/components/ui/Chatbot";
 
 const bodyFont = localFont({
   src: [
@@ -71,6 +72,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Chatbot />
       </body>
     </html>
   );
